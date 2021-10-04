@@ -31,7 +31,6 @@ class TopicOntologyToGraph(OntologyToGraph):
         nodes = { n for n in self.ontology.classeslist}
         instances= list(self.ontology.instanceslist)
         op={o for o in self.ontology.objectpropertieslist}
-#        labels = tuple([self.ontology.labelClassOf(value) for i, value in enumerate(self.ontology.classeslist)])
         edges = []
         for i, node in enumerate(nodes):
             subclasses = self.ontology.subClassesOf(node)
