@@ -12,7 +12,6 @@ class Main():
     1- assign the named entities as instances;
     2- create Topic-OPA ontology based on the assigned named entities;
     3- apply the topic labeling process.
-    To do this, the ontology is transformed into a directed weighted graph and RelTopic is applied.
       """
 
     type_press_list=['','recent-press/']
