@@ -8,14 +8,11 @@
 
 import csv
 from collections import Counter
-import xml.etree.ElementTree as ET
 import numpy as np
 import pandas as pd
 from SPARQLWrapper import JSON, SPARQLWrapper
 import TopicOntology
 import OntologyDirectedGraph
-import time
-
 
 
 class TopicLabeling:
