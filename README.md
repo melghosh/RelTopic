@@ -15,9 +15,17 @@ This research work is addressed in the following papers:
 ### This code is beta version (Python 3.8 is required)
 -------------------------------------------------------
 #### Data Sources
-The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `\Data-Articles\xml\`.
+The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `/Data-Articles/xml/`.
 
 #### Source Code
+The source code is composed of seven main files:
+
+* AssignInstances: 
+* OntologyConstruction:
+* OntologyConstructionApplication:
+* TopicOntology:
+* OntologyDirectedGraph:
+* TopicLabeling: 
 
 
 #### Labeling Results
