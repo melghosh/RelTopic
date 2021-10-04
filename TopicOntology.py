@@ -6,12 +6,8 @@
 #
 #
 
-import owlready2
 from owlready2 import *
-import csv
 import pandas as pd
-import types
-
 
 class TopicOnto(object):
     """this class implements topic ontologies.
@@ -23,22 +19,14 @@ class TopicOnto(object):
 
       self.onto = owlready2.get_ontology(src).load()
       self.classes = [s for s in self.onto.classes()]
-      self._topics=[]
-      self.listclass=list(self.onto.classes())
+      self.classeslist=list(self.onto.classes())
       self.ontology=self.onto
       rootiri = 'http://www.co-ode.org/ontologies/ont.owl#Root'
       root = self.ontology.search_one(iri=rootiri)
       self._root = root
-      self.objectproperties=list(self.onto.object_properties())
-      self.annotation=list(self.onto.annotation_properties())
-      #print(self.objectproperties)
-
-
-    ###################################################
+      self.objectpropertieslist=list(self.onto.object_properties())
       self.instanceofclasses=self.assignInstances(file)
       self.instanceslist=self.getNonRepeatedInstances()
-
-    ####################################################
 
 
     def clearInstances(self):
@@ -61,20 +49,10 @@ class TopicOnto(object):
         for r in ziplist:
             instancestr=r[1]
             top = r[0]
-            #print(top)
-
-
             iri1='http://www.wikidata.org/entity/'+top+''
 
             i=self.ontology.search_one(iri=iri1)
-           # print(i.iri)
-
             iri2=i.iri
-            #print('iri2: ', iri2)
-
-            #lengthiri = len(iri2)
-
-            #namespace=self.ontology.get_namespace(self.ontology.base_iri)
 
             if(instancelist.__contains__(instancestr)!=True):
              instancelist.append(instancestr)
@@ -88,8 +66,6 @@ class TopicOnto(object):
 
             if(itemtoplist.__contains__(i)!=True):
              itemtoplist.append(i)
-           #else:
-            #   print("instanceof class ("+top+") NOT FOUND in the ontology")
 
         return itemtoplist
 
@@ -114,14 +90,12 @@ class TopicOnto(object):
         instances.pop(0)
         topics = data.topic.tolist()
         topics.pop(0)
-
         ziplist = list(zip(topics, instances))
 
         return ziplist
 
 
     def addInstances(self):
-        listfinalinstances=[]
         colnames = ['instance', 'topic']
         data = pd.read_csv('instance.csv', names=colnames)
         instances = data.instance.tolist()
@@ -133,18 +107,12 @@ class TopicOnto(object):
 
         for r in ziplist:
             instancestr=f'"{r[1]}"'
-
             top=r[0]
-
             itemtop=self.onto.__getitem__(top)
             itemtop(instancestr)
 
-
-
     def getInstances(self, c):
         return c.instances()
-
-
 
     def is_a(self,c):
         return c.is_a
@@ -197,7 +165,3 @@ class TopicOnto(object):
 
     def wikidataID(self,c):
         return c.Wikidata_id
-
-
-
-

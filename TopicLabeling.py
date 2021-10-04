@@ -23,7 +23,6 @@ class TopicLabeling:
  """This class implements the topic pabeling process of articles.
     input: list of articles (csv).
     output: list of topics associated for each article.
-
   """
 
  def getLabel(c1):
@@ -33,12 +32,10 @@ class TopicLabeling:
                             agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36')
 
      sparql_query = """
-
                                       SELECT ?topic ?topicLabel
                                WHERE
                                {
                                  wd:""" + c11 + """  rdfs:label ?topicLabel.
-
                                  SERVICE wikibase:label { bd:serviceParam wikibase:language "[en]". }
                                }  """
      # res = return_sparql_query_results(sparql_query)
@@ -71,12 +68,10 @@ class TopicLabeling:
                             agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36')
 
      sparql_query = """
-
                                  SELECT ?superclass
                           WHERE
                           {
                             wd:""" + c11 + """  wdt:P279* ?superclass.
-
                             # both occupations in one line
                             SERVICE wikibase:label { bd:serviceParam wikibase:language "[en]". }
                           }  """
@@ -102,12 +97,10 @@ class TopicLabeling:
                             agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36')
 
      sparql_query = """
-
                                  SELECT ?superclass
                           WHERE
                           {
                             wd:""" + c11 + """  wdt:P279* ?superclass.
-
                             # both occupations in one line
                             SERVICE wikibase:label { bd:serviceParam wikibase:language "[en]". }
                           }  """
@@ -128,7 +121,7 @@ class TopicLabeling:
      return listid
 
  #problem in A_23 (instance:Q6063)
- g1='Data-Articles/csv/recent-press/articles.csv'
+ g1='Data-Articles/recent-press/csv/articles.csv'
  colname = ['article']
  data = pd.read_csv(g1, names=colname)
  articles = data.article.tolist()
@@ -144,7 +137,7 @@ class TopicLabeling:
  # for each article get the instances and specific topic concepts
   print('----------------')
   print("Article: "+a)
-  file="Data-Articles/csv/recent-press/"+a+".csv"
+  file="Data-Articles/recent-press/csv/"+a+".csv"
   colnames = ['instance', 'topic']
   data = pd.read_csv(file, names=colnames)
   topics = data.topic.tolist()
@@ -159,9 +152,9 @@ class TopicLabeling:
   #load he ontology with the instances
   onto2=TopicOntology.TopicOnto("ontology/Topic-RPA.owl",file)
   print('test')
-  og = OntologyDirectedGraph.TopicOntologyTransform(onto2)
-  tax = OntologyDirectedGraph.Taxonomy(og)
-  alltopics=onto2.listclass
+  og = OntologyDirectedGraph.TopicOntologyToGraph(onto2)
+  tax = OntologyDirectedGraph.DiGraph(og)
+  alltopics=onto2.classeslist
 
   #the list of specific topics
   for t in topics:
@@ -443,7 +436,7 @@ class TopicLabeling:
       arrayoftopicslabel.append(getLabel(at))
   resultsLabeling.append((a,arrayoftopics,arrayoftopicslabel))
 
- with open('labeling-results/csv/results-Topic-Labeling-Recent-Press-Topic-RPA-2.csv', mode='w', newline='') as csv_file:
+ with open('labeling-results/csv/results-Topic-Labeling-Test.csv', mode='w', newline='') as csv_file:
     fieldnames = ['Article', 'Topic-WikidataID', 'Topic-Label']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 

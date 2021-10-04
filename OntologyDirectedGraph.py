@@ -11,191 +11,106 @@ import numpy as np
 from abc import abstractmethod, ABCMeta
 import networkx as nx
 
-class OntologyTransform:
+class OntologyToGraph:
 
     __metaclass__ = ABCMeta
 
     @abstractmethod
-    def transform(self):
-        """return nodes, labels, and edges (taxonomic and cross-references)"""
+    def convert(self):
         pass
 
-
-class TopicOntologyTransform(OntologyTransform):
-
-    """This class transforms owl ontology into graph: nodes, edges and cross-references.
-          """
-
+#This class converts the topic ontology into graph of nodes, edges, and cross-references.
+class TopicOntologyToGraph(OntologyToGraph):
 
     def __init__(self,onto):
      self.ontology= onto
      self._root=self.ontology._root
 
 
-    def transform(self):
-        nodes = { n for n in self.ontology.listclass}
-        #print(nodes)
+    def convert(self):
+        nodes = { n for n in self.ontology.classeslist}
         instances= list(self.ontology.instanceslist)
-        op={o for o in self.ontology.objectproperties}
-        #print('op: ',op)
-        node_id = {n: i for i, n in enumerate(nodes)}
-        labels = tuple([self.ontology.labelClassOf(value) for i, value in enumerate(self.ontology.listclass)])
-
+        op={o for o in self.ontology.objectpropertieslist}
+#        labels = tuple([self.ontology.labelClassOf(value) for i, value in enumerate(self.ontology.classeslist)])
         edges = []
         for i, node in enumerate(nodes):
-            children = self.ontology.subClassesOf(node)
-            children = [child for child in children if child in nodes]
-            for child in children:
+            subclasses = self.ontology.subClassesOf(node)
+            subclasses = [child for child in subclasses if child in nodes]
+            for child in subclasses:
                 edges.append((node, child))
-
-        counter=0
         for x in instances:
             nodes.add(x)
-
         listinstanceofclasses=self.ontology.instanceofclasses
         for x in listinstanceofclasses:
            instance=self.ontology.getInstances(x)
            for i in instance:
-            #print(i)
             edges.append((x,i))
-
         crossref = []
         for o in op:
-            #print(o)
             domainlist = (self.ontology.domainOP(o))
             rangelist= (self.ontology.rangeOP(o))
-
             domain = [d for d in domainlist]
             range= [r for r in rangelist]
             for d in domain:
                 for r in range:
-                 # print(d,r)
                   crossref.append((d, r))
+        return nodes, edges, crossref
 
 
-        return nodes, labels, edges, crossref
-
-
-class Taxonomy(object):
-    """This class buils the ontology graph (weighted and unweighted) based on the nodes and edges transformed
+class DiGraph(object):
+    """This class builds the ontology weighted graph based on the nodes and edges transformed
        from the ontology concepts and relations.
        The ontology graph will be used to compute the semantic relatedness between the (assigned) instances
        and the concept nodes.
-
        In this class, we define our semantic relatedness measure RelTopic that considers the assessment
        of semantic relatedness between instances and concepts nodes.
         """
 
     def __init__(self, onto):
-        self._nodes, self._labels, self._edges, self._crossref = onto.transform()
-        self._node2id = {value: i for i, value in enumerate(self._nodes)}
-        #self._label2id = {value: i for i, value in enumerate(self._labels)}
-        # virtual root
-        self._root_id = len(self._nodes) + 1
+        self.nodes, self.edges, self.crossref = onto.convert()
         self._root=onto._root
-        self._taxonomy = nx.DiGraph()
-        self._hyponyms = {}
-        self._hypernyms = {}
-
+        self.digraph = nx.DiGraph()
+        self.subclasses = {}
+        self.superclasses = {}
         self.build_weighted_graph(onto)
-
-    def build_graph(self, onto):
-
-        print("build graph")
-        parents, children = zip(*self._edges)
-
-        domains, ranges = zip(*self._crossref)
-        parents_set = set(parents)
-        children_set = set(children)
-        not_children = []
-        not_parent = []
-        # nodes with no edges
-        #for n in self._nodes:
-         #   if n not in parents_set and n not in children_set:
-          #      root_children.append(n)
-
-
-        #find out those parents that are not appeared in children set
-
-        for p in parents_set:
-            if p not in children_set:
-                not_children.append(p)
-
-        # find out children that are not appeared in parent set
-        for p in children_set:
-            if p not in parents_set:
-                not_parent.append(p)
-
-        self._taxonomy.add_nodes_from(self._nodes)
-
-        # add taxonomical edges
-        for parent, child in self._edges:
-
-            self._taxonomy.add_edge(child, parent)
-
-
-        for d, r in self._crossref:
-            print(d,r)
-
-            self._taxonomy.add_edge(d,r)
-
-
-
-        # hyponyms and hypernyms
-        for parent, child in self._edges:
-            self._hyponyms.setdefault(parent,[]).append(child)
-
-        for parent, child in self._edges:
-            self._hypernyms.setdefault(child, []).append(parent)
-
 
     def build_weighted_graph(self, onto):
 
+            hypernyms, subclasses = zip(*self.edges)
+            #domains, ranges = zip(*self.crossref)
+            hypernyms_set = set(hypernyms)
+            subclasses_set = set(subclasses)
+            not_subclasses = []
+            not_hypernyms = []
 
-            parents, children = zip(*self._edges)
-            domains, ranges = zip(*self._crossref)
-            parents_set = set(parents)
-            children_set = set(children)
+            for p in hypernyms_set:
+                if p not in subclasses:
+                    not_subclasses.append(p)
 
-            not_children = []
-            not_parent = []
+            for p in subclasses_set:
+                if p not in hypernyms_set:
+                    not_hypernyms.append(p)
+            self.digraph.add_nodes_from(self.nodes)
 
+            for hypernym, hyponym in self.edges:
 
-            # find out those parents that are not appeared in children set
-
-            for p in parents_set:
-                if p not in children_set:
-                    not_children.append(p)
-
-            # find out children that are not appeared in parent set
-            for p in children_set:
-                if p not in parents_set:
-                    not_parent.append(p)
-
-            self._taxonomy.add_nodes_from(self._nodes)
-
-            # add taxonomical edges
-            #add weights to taxonomical edges depending on level
-            for parent, child in self._edges:
-
-                if(parent==self._root):
-                 self._taxonomy.add_edge(child, parent, weight=1)
+                if(hypernym==self._root):
+                 self.digraph.add_edge(hyponym, hypernym, weight=1)
                 else:
-                    self._taxonomy.add_edge(child, parent, weight=1)
+                    self.digraph.add_edge(hyponym, hypernym, weight=1)
 
-            for d, r in self._crossref:
+            for d, r in self.crossref:
 
-                self._taxonomy.add_edge(d, r, weight=0.25)
+                self.digraph.add_edge(d, r, weight=0.25)
 
-            # hyponyms and hypernyms
-            for parent, child in self._edges:
-                self._hyponyms.setdefault(parent, []).append(child)
+            for hypernym, hyponym in self.edges:
+                self.subclasses.setdefault(hypernym, []).append(hyponym)
 
-            for parent, child in self._edges:
-                self._hypernyms.setdefault(child, []).append(parent)
+            for hypernym, hyponym in self.edges:
+                self.superclasses.setdefault(hyponym, []).append(hypernym)
 
 
-    def root_children(self):
+    def root_subclass(self):
         return self.hyponyms(self._root)
 
     def isReachable(self,tax,c1,c2):
@@ -206,45 +121,34 @@ class Taxonomy(object):
 
     def todirected(self):
 
-        return self._taxonomy.to_directed()
-
-
+        return self.digraph.to_directed()
 
     def is_directed_acyclic(self):
 
-        return nx.is_directed_acyclic_graph(self._taxonomy)
-
-
+        return nx.is_directed_acyclic_graph(self.digraph)
 
     def is_directed(self):
-        return self._taxonomy.is_directed()
-
+        return self.digraph.is_directed()
 
     def hyponyms(self, node):
-        return self._hyponyms[node] if node in self._hyponyms else []
+        return self.subclasses[node] if node in self.subclasses else []
 
     def hypernyms(self, node):
-        return self._hypernyms[node] if node in self._hypernyms else []
-
-
+        return self.superclasses[node] if node in self.superclasses else []
 
     def shortest_path_length(self, node1, node2):
         length=0
-        if(nx.has_path(self._taxonomy, node1,node2)):
+        if(nx.has_path(self.digraph, node1,node2)):
 
-         length= (nx.shortest_path_length(self._taxonomy, node1, node2))
+         length= (nx.shortest_path_length(self.digraph, node1, node2))
         return length
 
     def shortest_path(self, node1, node2):
-        return nx.shortest_path(self._taxonomy, node1, node2)
-
-    def depth(self, node):
-        return self.shortest_path_length(self._root, node)
+        return nx.shortest_path(self.digraph, node1, node2)
 
 
-    #get the neighbours of a node c
     def getneighbours(self, c):
-        listn=self._taxonomy.neighbors(c)
+        listn=self.digraph.neighbors(c)
 
         return list(listn)
 
@@ -255,9 +159,7 @@ class Taxonomy(object):
 
         for l in listn:
             wn=self.weightnode(l)
-            #print(wn)
             we=self.get_edge_data(c,l)
-           # print(we["weight"])
             v=wn*we["weight"]
             sum+=v
 
@@ -286,7 +188,7 @@ class Taxonomy(object):
         weightofnode = 0
 
         nbofneighbours=self.getneighbours(c1).__len__()
-        totalnodes=self._taxonomy.nodes.__len__()
+        totalnodes=self.digraph.nodes.__len__()
 
         if(nbofneighbours==0):
             weightofnode=0
@@ -294,8 +196,6 @@ class Taxonomy(object):
             weightofnode=-math.log((nbofneighbours)/(totalnodes))
 
         return weightofnode
-
-
 
 #calculate the weight of an instance c1
     def weightnodeinstance(self,c1):
@@ -310,14 +210,12 @@ class Taxonomy(object):
 
             weight = np.mean(listweighthyper)
 
-
         return weight
 
 
-    #check if x is a superclass of y
     def superclassof(self,x,y):
 
-        path = nx.dijkstra_path(self._taxonomy, x, y)
+        path = nx.dijkstra_path(self.digraph, x, y)
         i=0
         while(i<path.__len__()-1):
          nextnode=path.__getitem__(i+1)
@@ -332,12 +230,12 @@ class Taxonomy(object):
 
 
     def ancestors(self,c):
-        a=nx.ancestors(self._taxonomy,c)
+        a=nx.ancestors(self.digraph,c)
 
         return a
 
     def isancestor(self,c1,c2):
-        a=nx.ancestors(self._taxonomy,c2)
+        a=nx.ancestors(self.digraph,c2)
         for x in a:
             if (x==c1):
                 return True
@@ -346,13 +244,11 @@ class Taxonomy(object):
 
 
     def ancestors(self,c):
-        return list(nx.ancestors(self._taxonomy,c))
+        return list(nx.ancestors(self.digraph,c))
 
 
     def has_path(self,x,y):
-        return(nx.has_path(self._taxonomy,x,y))
-
-
+        return(nx.has_path(self.digraph,x,y))
 
     #computation of the semantic relatedness measure RelTopic
     def semRelTopicMeasure(self, c1,c2, weight):
@@ -361,8 +257,8 @@ class Taxonomy(object):
          relatedness=0
 
          #consider c1 as instance and c2 as topic concept
-         if (nx.has_path(self._taxonomy,c1,c2) ):
-             dijkstrapathlength = nx.dijkstra_path_length(self._taxonomy, c1, c2, weight)
+         if (nx.has_path(self.digraph,c1,c2) ):
+             dijkstrapathlength = nx.dijkstra_path_length(self.digraph, c1, c2, weight)
              #print('length of path',dijkstrapathlength)
 
              w1=self.weightnodeinstance(c1)
@@ -389,7 +285,7 @@ class Taxonomy(object):
     def turns(self, x, y):
 
             nbturns=0
-            path = nx.dijkstra_path(self._taxonomy, x, y)
+            path = nx.dijkstra_path(self.digraph, x, y)
             i = 0
             while (i < path.__len__() - 1):
                 nextnode = path.__getitem__(i + 1)
@@ -405,7 +301,7 @@ class Taxonomy(object):
 
     def relHS(self, c1, c2):
         """ Hirst and St-Onge’s measure """
-        if(nx.has_path(self._taxonomy,c1,c2)):
+        if(nx.has_path(self.digraph,c1,c2)):
          rel=8-self.shortest_path_length(c1, c2)- self.turns(c1,c2)
 
         else:
@@ -415,18 +311,16 @@ class Taxonomy(object):
 
     def simRadaTaxonomy(self, c1, c2):
         """ Rada's shortest path """
-        if(nx.has_path(self._taxonomy,c1,c2)):
+        if(nx.has_path(self.digraph,c1,c2)):
          path=1 / (1+self.shortest_path_length(c1, c2))
         else:
             path=0
 
         return path
 
-
-
     def get_edge_data(self, c1,c2):
-        return self._taxonomy.get_edge_data(c1,c2)
+        return self.digraph.get_edge_data(c1,c2)
 
     def is_multigraph(self):
-        return self._taxonomy.is_multigraph()
+        return self.digraph.is_multigraph()
 
