@@ -2,7 +2,7 @@
 
 We present RelTopic, a novel graph-based semantic relatedness measure in topic ontologies for topic labeling purposes. RelTopic is applied in the context of `Cultural Heritage`, specifically old press articles. This study is part of the European project `ASTURIAS` (Structural Analysis and Semantic Indexing of Newspaper Articles). 
 
-To apply RelTopic, a topic ontology named Topic-OPA is developed from press articles represented by a set of named entities that disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
+To apply RelTopic, a topic ontology named Topic-OPA is developed from the articles represented by a set of named entities that are disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
 
 
 This research work is addressed in the following papers:
@@ -15,6 +15,7 @@ This research work is addressed in the following papers:
 ### This code is beta version (Python 3.8 is required)
 -------------------------------------------------------
 #### Data Sources
+The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `\Data-Articles\xml\`.
 
 #### Source Code
 
