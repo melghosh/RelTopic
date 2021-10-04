@@ -1,0 +1,48 @@
+Article,Topic-WikidataID,Topic-Label
+A_1,['Q7163'],['politics']
+A_2,['Q349'],['sport']
+A_3,['Q19890758'],['political activism']
+A_4,['Q7163'],['politics']
+A_5,['Q7163'],['politics']
+A_6,['Q7163'],['politics']
+A_7,['Q7163'],['politics']
+A_8,['Q7163'],['politics']
+A_9,['Q7163'],['politics']
+A_10,['Q735'],['art']
+A_11,['Q162555'],['oncology']
+A_12,['Q19890758'],['political activism']
+A_13,['Q349'],['sport']
+A_14,['Q735'],['art']
+A_15,['Q184485'],['performing arts']
+A_16,"['Q222749', 'Q735']","['acting', 'art']"
+A_17,['Q7163'],['politics']
+A_18,"['Q2215841', 'Q53121']","['cycle sport', 'cycling']"
+A_19,['Q11030'],['journalism']
+A_20,['Q7163'],['politics']
+A_21,['Q336'],['science']
+A_22,['Q19890758'],['political activism']
+A_23,['Q7163'],['politics']
+A_24,"['Q336', 'Q36161']","['science', 'set']"
+A_25,['Q7163'],['politics']
+A_26,"['Q11023', 'Q159810']","['engineering', 'economy']"
+A_27,['Q7163'],['politics']
+A_28,"['Q1791716', 'Q198']","['military affairs', 'war']"
+A_29,['Q765633'],['aviation']
+A_30,['Q765633'],['aviation']
+A_31,['Q7163'],['politics']
+A_32,['Q765633'],['aviation']
+A_33,['Q192995'],['vaccination']
+A_34,['Q7163'],['politics']
+A_35,"['Q7163', 'Q36161']","['politics', 'set']"
+A_37,['Q372016'],['pathogenesis']
+A_38,['Q11030'],['journalism']
+A_39,['Q136822'],['higher education']
+A_40,['Q5386'],['auto racing']
+A_41,['Q7163'],['politics']
+A_42,['Q735'],['art']
+A_43,"['Q2215841', 'Q53121']","['cycle sport', 'cycling']"
+A_44,['Q7163'],['politics']
+A_45,"['Q136822', 'Q336']","['higher education', 'science']"
+A_46,['Q336'],['science']
+A_47,['Q8134'],['economics']
+A_48,['Q336'],['science']

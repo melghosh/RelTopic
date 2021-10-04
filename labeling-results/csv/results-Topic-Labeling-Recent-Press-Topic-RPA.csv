@@ -1,0 +1,37 @@
+Article,Topic-WikidataID,Topic-Label
+A_1,['Q847'],['tennis']
+A_2,['Q349'],['sport']
+A_3,['Q349'],['sport']
+A_4,['Q349'],['sport']
+A_5,['Q5849'],['rugby union']
+A_6,['Q349'],['sport']
+A_7,['Q349'],['sport']
+A_8,['Q36908'],['mountaineering']
+A_9,"['Q847', 'Q349']","['tennis', 'sport']"
+A_10,['Q8386'],['drug']
+A_11,['Q735'],['art']
+A_12,['Q336'],['science']
+A_13,['Q215028'],['peer review']
+A_14,['Q19862406'],['business']
+A_15,['Q14208553'],['invention']
+A_16,['Q609089'],['spacecraft propulsion']
+A_17,['Q215028'],['peer review']
+A_18,['Q3551559'],"[""université d'été""]"
+A_19,['Q336'],['science']
+A_20,['Q19862406'],['business']
+A_21,['Q7163'],['politics']
+A_22,['Q7163'],['politics']
+A_23,['Q7163'],['politics']
+A_24,['Q7163'],['politics']
+A_25,['Q7163'],['politics']
+A_26,"['Q79896', 'Q7163']","['separation of powers', 'politics']"
+A_27,['Q7163'],['politics']
+A_28,['Q340169'],['communication medium']
+A_29,['Q222749'],['acting']
+A_30,"['Q19862406', 'Q36993249']","['business', 'arranging']"
+A_31,['Q222749'],['acting']
+A_32,['Q222749'],['acting']
+A_33,['Q1791716'],['military affairs']
+A_34,['Q1027879'],['graphics']
+A_35,['Q735'],['art']
+A_36,"['Q17344835', 'Q735']","['songwriting', 'art']"
