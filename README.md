@@ -18,7 +18,7 @@ This research work is addressed in the following papers:
 The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `/Data-Articles/xml/`.
 
 #### Source Code
-The source code is composed of seven main files:
+The source code is composed of the following files:
 
 * **AssignInstances**: assign the named entities as instances of Wikidata classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
 
@@ -31,8 +31,6 @@ The source code is composed of seven main files:
 * **OntologyDirectedGraph**: transform the topic ontology into a directed weighted graph. The semantic relatedness measure RelTopic is defined based on ontology graph.
 
 * **TopicLabeling**: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
-
-* **Main**: excute the complete process (i.e., assignment of instances, ontology construction, and topic labeling). To test our approach and verify the obtained results, execute `TopicLabeling`.
 
 
 #### Labeling Results
