@@ -12,8 +12,8 @@ This research work is addressed in the following papers:
 2- El Ghosh, M., Delestre, N., Zanni-Merk, C., Kotowicz, J.P., Abdulrab, H.: RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies and its Applicability for Topic Labeling of Old Press Articles. Submitted to [Semantic Web Journal](http://www.semantic-web-journal.net/content/reltopic-graph-based-semantic-relatedness-measure-topic-ontologies-and-its-applicability-0).
 
 
-### This code is beta version (Python 3.8 is required)
--------------------------------------------------------
+### The code is beta version (Python 3.8 is required) - The project is under improvement
+------------------------------------------------------------------------------------------
 #### Data Sources
 The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `/Data-Articles/xml/`.
 
