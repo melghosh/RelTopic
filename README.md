@@ -20,20 +20,29 @@ The main data sources are the named entities collected from the press articles a
 #### Source Code
 The source code is composed of seven main files:
 
-* AssignInstances: 
-* OntologyConstruction:
-* OntologyConstructionApplication:
-* TopicOntology:
-* OntologyDirectedGraph:
-* TopicLabeling: 
+* AssignInstances: assign the named entities as instances of Wikidata classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
+
+* OntologyConstruction: define a set of SPARQL queries to build topic ontologies. The building process is composed of three main phases: 1) construct the hierarchical structure; 2) construct the non-hierarchical structure; 3) enrich the hierarchy of the ontology.
+
+* OntologyConstructionApplication: apply the ontology development in the context of old press articles specifically the old french newspaper `Le Matin`. The inputs are the `CSV` files and the output is an OWL ontology (e.g., Topic-OPA.owl) located in `/ontology/`.
+
+* TopicOntology: implement the topic ontology and add the instances. 
+
+* OntologyDirectedGraph: transform the topic ontology into a directed weighted graph. The semantic relatedness measure RelTopic is defined based on this graph.
+
+* TopicLabeling: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
+
+* Main: excute the complete process (i.e., assignment of instances, ontology construction, and topic labeling). To test our approach and verify the obtained results, execute `TopicLabeling`.
 
 
 #### Labeling Results
-
+The labeling results are `CSV` files located in `/labeling-results/csv/`.
 
 
 ### IMPORTANT NOTE
 -------------------------------------------------------
+In this study, Topic-OPA is harvested from Wikidata in July `2020`.
+
 
 
 
