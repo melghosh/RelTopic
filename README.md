@@ -43,10 +43,14 @@ The labeling results are `CSV` files located in `/labeling-results/csv/`.
 -------------------------------------------------------
 In this study, Topic-OPA is harvested from Wikidata in July `2020`.
 
+![image](https://user-images.githubusercontent.com/91874965/135828466-ee90db5a-1df6-4a6a-ba65-e3e4cdcef08b.png)
 
+![image](https://user-images.githubusercontent.com/91874965/135828416-25cedc2e-83e9-4fa4-a67b-3252476a85b7.png)
 
 
 ### TODO
 -------------------------------------------------------
+* Code: to improve the implementation and the approach and enhance the code.
 
+* Ontology: to curate the topic ontology, apply the labeling process on the curated version, and assess the pertinence of the labeling results.
  
