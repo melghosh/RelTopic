@@ -11,7 +11,7 @@ This research work is addressed in the following papers:
 
 2- El Ghosh, M., Delestre, N., Zanni-Merk, C., Kotowicz, J.P., Abdulrab, H.: RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies and its Applicability for Topic Labeling of Old Press Articles. Submitted to [Semantic Web Journal](http://www.semantic-web-journal.net/content/reltopic-graph-based-semantic-relatedness-measure-topic-ontologies-and-its-applicability-0).
 
-
+------------------------------------------------------------------------------------------
 ### The code is beta version (Python 3.8 is required) - The project is under improvement
 ------------------------------------------------------------------------------------------
 #### Data Sources
@@ -36,7 +36,7 @@ The source code is composed of the following files:
 #### Labeling Results
 The labeling results are `CSV` files located in `/labeling-results/csv/`.
 
-
+-------------------------------------------------------
 ### IMPORTANT NOTE
 -------------------------------------------------------
 In this study, the latest version of Topic-OPA is harvested from Wikidata in July `2020`. Applying the ontology construction process currently, or in the future, will produce a slightly different Topic-OPA since *Wikidata* is continually growing. We show below examples of differences in metrics and hierarchies between Topic-OPA 2020 and 2021. These changes will affect different RelTopic computations such as *average depth*, *average of relatedness values*, *threshold*, etc. Therefore, the labeling results will be affected. To overcome this limitation, it is advised to curate Topic-OPA under the supervision of domain experts and admit a pertinent version of the ontology.
@@ -45,7 +45,7 @@ In this study, the latest version of Topic-OPA is harvested from Wikidata in Jul
 
 ![image](https://user-images.githubusercontent.com/91874965/135831768-a222a93d-9b4d-4f65-b51a-a53ab3a7bd60.png)
 
-
+-------------------------------------------------------
 ### TO-DO
 -------------------------------------------------------
 * **Code**: to improve the topic labeling algorithm and enhance the code.
