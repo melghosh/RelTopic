@@ -14,6 +14,8 @@ class Main():
     3- apply the topic labeling process.
       """
 
+
+    #Step3-to test the labeling results obtained for old and recent press
     type_press_list=['','recent-press/']
     ontology_old_press='ontology/Topic-OPA.owl'
     ontology_recent_press='ontology/Topic-RPA.owl'
