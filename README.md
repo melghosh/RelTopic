@@ -4,7 +4,7 @@ We present RelTopic, a novel graph-based semantic relatedness measure in topic o
 
 To apply RelTopic, a topic ontology named Topic-OPA is developed from the articles represented by a set of named entities that are disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
 
-
+#### Publications: 
 This research work is addressed in the following papers:
 
 1- El Ghosh, M., Zanni-Merk, C., Delestre, N., Kotowicz, J.P., Abdulrab, H.: Topic-OPA: A Topic Ontology for Modeling Topics of Old Press Articles. In proceedings of the 12th International conference on Knowledge Engineering and Ontology Development (KEOD 2020). pp. 275-282, November 2020
@@ -41,7 +41,7 @@ The labeling results are `CSV` files located in `/labeling-results/csv/`.
 
 ### IMPORTANT NOTE
 -------------------------------------------------------
-In this study, the latest version of Topic-OPA is harvested from Wikidata in July `2020`. Applying the ontology construction process currently, or in the future, will produce a slightly different Topic-OPA since *Wikidata* is continually growing. We show below examples of differences in metrics and hierarchies between Topic-OPA 2020 and 2021. These changes will affect different RelTopic computations related to Topic-OPA such as *average depth*, *average of relatedness values*, *threshold*, etc. Therefore, the labeling results will be affected. To overcome this limitation, it is advised to curate Topic-OPA under the supervision of domain experts and admit a pertinent version of the ontology.
+In this study, the latest version of Topic-OPA is harvested from Wikidata in July `2020`. Applying the ontology construction process currently, or in the future, will produce a slightly different Topic-OPA since *Wikidata* is continually growing. We show below examples of differences in metrics and hierarchies between Topic-OPA 2020 and 2021. These changes will affect different RelTopic computations such as *average depth*, *average of relatedness values*, *threshold*, etc. Therefore, the labeling results will be affected. To overcome this limitation, it is advised to curate Topic-OPA under the supervision of domain experts and admit a pertinent version of the ontology.
 
 ![image](https://user-images.githubusercontent.com/91874965/135832335-e8510443-8fdc-4fe7-917b-d170ae962de4.png)
 
