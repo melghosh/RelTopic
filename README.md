@@ -36,7 +36,7 @@ The source code is composed of the following files:
 
 
 #### Labeling Results
-The labeling results are `CSV` files located in `/labeling-results/csv/`.
+The labeling results are `CSV` files located in `/labeling-results/csv/`
 
 -------------------------------------------------------
 ### IMPORTANT NOTE
