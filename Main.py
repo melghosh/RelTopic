@@ -15,16 +15,17 @@ class Main():
       """
 
 
-    #Step3-to test the labeling results obtained for old and recent press
+    #Step3-to apply the labeling process on old and recent press
     type_press_list=['','recent-press/']
     ontology_old_press='ontology/Topic-OPA.owl'
     ontology_recent_press='ontology/Topic-RPA.owl'
 
     t=TopicLabeling.TopicLabeling()
 
-    #uncomment to test the labeling results of recent press articles
+    #uncomment to apply the labeling of recent press articles
     #t.labeling_process(ontology_recent_press, type_press_list[1])
 
     #labeling old press articles
     #type_press_list[0] is the old press
     t.labeling_process(ontology_old_press, type_press_list[0])
+
