@@ -50,7 +50,7 @@ In this study, the latest version of Topic-OPA is harvested from Wikidata in Jul
 
 ### TO-DO
 -------------------------------------------------------
-* **Code**: to improve the implementation and the approach and enhance the code.
+* **Code**: to improve the topic labeling algorithm and enhance the code.
 
 * **Ontology**: to curate the topic ontology, apply the labeling process on the curated version, and assess the pertinence of the labeling results.
  
