@@ -1,6 +1,6 @@
 # RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies 
 
-We present RelTopic, a novel graph-based semantic relatedness measure in topic ontologies for topic labeling purposes. RelTopic aims to assess the semantic relatendess between instances and concepts in topics ontologies by computing weights of nodes and edges, degree centrality of nodes, and shortest paths. RelTopic is applied in the context of `Cultural Heritage`, specifically old press articles. This study is part of the European project `ASTURIAS` (Structural Analysis and Semantic Indexing of Newspaper Articles). 
+We present RelTopic, a novel graph-based semantic relatedness measure in topic ontologies for topic labeling purposes. RelTopic aims to assess the semantic relatedness between instances and concepts in topics ontologies by computing weights of nodes and edges, degree centrality of nodes, and shortest paths. RelTopic is applied in the context of `Cultural Heritage`, specifically old press articles. This study is part of the European project `ASTURIAS` (Structural Analysis and Semantic Indexing of Newspaper Articles). 
 
 To apply RelTopic, a topic ontology named Topic-OPA is developed from the articles represented by a set of named entities that are disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
 
