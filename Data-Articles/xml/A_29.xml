@@ -1,0 +1,26 @@
+﻿<Article id="A_29" year="1925" issue="february" day="5
+    " page="1">
+     <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q47507976" value="Henri Lemaître"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2397986" value="Ludovic Arrachart"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q3718" value="Dakar"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q929147" value="Río de Oro"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q345204" value="Villa Cisneros  Dakhla"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q184184" value="Port-Etienne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q38782879" value="cap Juby"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q1028" value="Maroc"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q45" value="Portugal"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q29" value="Espagne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q7903" value="Casablanca"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q216939" value="Mogador"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q170525" value="Agadir"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q12193" value="Brest"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q7880" value="Toulouse"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q205584" value="Etampes"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q90" value="Paris"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q210682" value="Afrique-Occidentale française (A.O.F.)"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q936633" value="Chambre des députés"/>
+</Article>

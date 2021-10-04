@@ -1,0 +1,32 @@
+﻿<Article id="A_8" year="1912" issue="february" day="21" page="2">
+	<topics>
+				<topic uri=""/>
+
+	</topics>
+	<NE type="organization" uri="http://www.wikidata/entity/Q215987" value="Senate"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3166130" value="Jean-Honoré Audiffred"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q356032" value="Charles Dupuy"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3262649" value="Louis Martin "/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3370828" value="Paul Cazeneuve"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3370674" value="Paul Boivin-Champeaux"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3385377" value="Pierre Guillier"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3588304" value="Émile Aimond"/>
+<NE type="organization" uri="http://www.wikidata/entity/Q5891192" value="Tresor public"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q358387" value="Alexandre Ribot"/>
+	<NE type="person" uri="" value="Klotz"/>
+		<NE type="person" uri="" value="Noel"/>
+		<NE type="divers" uri="http://www.wikidata/entity/Q13414621" value="loi des finances"/>
+
+
+	<NE type="organization" uri="http://www.wikidata/entity/Q320283" value="La Chambre des deputes"/>
+		<NE type="organization" uri="http://www.wikidata/entity/Q2986535" value="commission des finances"/>
+				<NE type="divers" uri="http://www.wikidata/entity/Q6085690" value="budget"/>
+
+
+
+
+</Article>
+
+
+
+

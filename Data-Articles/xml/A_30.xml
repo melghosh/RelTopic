@@ -1,0 +1,21 @@
+﻿<Article id="A_30" year="1925" issue="february" day="7" page="1">
+     <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q47507976" value="Henri Lemaître"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2397986" value="Ludovic Arrachart"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q559687" value="Charles Nollet"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3372326" value="Paul Vachet"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2959871" value="Charles Murat"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3185574" value="Joseph Roig"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q15" value="Afrique"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q3718" value="Dakar"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q18" value="Amérique du Sud"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q8678" value="Rio de Janeiro"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q40430" value="Bahia"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q985956" value="Caravelas"/>
+
+    <NE type="organization" uri="http://www.wikidata/entity/Q210682" value="Afrique-Occidentale française (A.O.F.)"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q516033" value="agence Havas"/>
+</Article>

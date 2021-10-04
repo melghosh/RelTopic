@@ -1,0 +1,21 @@
+﻿<Article id="A_38" year="1928" issue="september" day="7" page="1" url="https://gallica.bnf.fr/ark:/12148/bpt6k576274w/f1.item" title="L'opinion a Berlin sur le premier entretien Muller-Briand">
+  <topics>
+    <topic uri=""/> 
+  </topics>
+  <NE type="location" uri="http://www.wikidata/entity/Q64" value="Berlin"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q57158" value="Muller"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q183" value="Allemagne"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q179888" value="Briand"/>
+  <NE type="person" uri="" value="Klein"/>
+  <NE type="organization" uri="" value="Deutsche Allgemaine"/>
+  <NE type="product" uri="http://www.wikidata/entity/Q152925" value="Locarno"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q191974" value="Poincaré"/>
+  <NE type="product" uri="http://www.wikidata/entity/Q675003" value="Gazette de Voss"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q61" value="Washington"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q30" value="Amérique"/>
+  <NE type="location" uri="" value="Wihelmstrasse"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q71" value="Genève"/>
+  <NE type="product" uri="http://www.wikidata/entity/Q467800" value="Vorwaerts"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q103320" value="M. Schiff"/>
+
+</Article>

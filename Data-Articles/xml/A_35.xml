@@ -1,0 +1,18 @@
+﻿<Article id="A_35" year="1937" issue="june" day="28" page="3" url="https://gallica.bnf.fr/ark:/12148/bpt6k5856442/f3.item" title="Le General Franco declenche une offensive sur les fronts du Madrid">
+  <topics>
+    <topic uri=""/>
+   
+  </topics>
+  <NE type="person" uri="http://www.wikidata/entity/Q29179" value="général Franco"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q2807" value="Madrid"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q93366" value="Biscaye"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q501090" value="Castro Urdiales"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q84" value="Londres"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q16508" value="Jarama"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q8818" value="Valence"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q988865" value="Maranosa"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q959612" value="San Martin"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q23991386" value="Vaciamadrid"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q14294" value="Tage"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q5836" value="Tolède"/>
+</Article>

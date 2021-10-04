@@ -1,0 +1,28 @@
+﻿<Article id="A_27" year="1923" issue="april" day="8" page="1">
+     <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q274540" value="Alexandre Millerand"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2788498" value="Louis Loucheur"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q134982" value="David Lloyd George"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q191974" value="Raymond Poincaré"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q166663" value="Bonar Law"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q6454" value="Calais"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q745942" value="gare du nord"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q1289" value="Grenoble"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q191119" value="Rambouillet"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q183" value="Allemagne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q64" value="Berlin"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q90" value="Paris"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q21" value="Angleterre"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q161885" value="Grande-Bretagne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q84" value="Londres"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q151993" value="Ruhr"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q43287" value="Reich"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q449709" value="cabinet Cuno"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q637846" value="la Chambre"/>
+</Article>
+
+

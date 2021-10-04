@@ -1,0 +1,20 @@
+﻿<Article id="A_24" year="1923" issue="march" day="17" page="1">
+    <topics>
+        <topic uri=""/>
+         </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q192615" value="Ferdinand Foch"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q286375" value="Charles Émile Picard"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3592053" value="Étienne Bandy de Nalèche"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2865261" value="Arthur Meyer"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q529" value="Louis Pasteur"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q7186" value="Marie Curie"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q90" value="Paris"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q377066" value="Institut de France"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q188771" value="Académie des sciences"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q179023" value="provinces de l'empire colonial français"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q23816917" value="les Débats"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q2082831" value="le Gaulois"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q3224404" value="le Matin"/>
+</Article>

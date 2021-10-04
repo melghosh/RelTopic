@@ -1,0 +1,17 @@
+﻿<Article id="A_26" year="1923" issue="april" day="6" page="1">
+    <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="" value="Georges Barbot"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2095121" value="Émile Dewoitine"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q5396" value="Louis Blériot"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q848304" value="Hubert Latham"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q34640" value="La Manche"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q90" value="Paris"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q7880" value="Toulouse"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q30974" value="Rouen"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q6454" value="Calais"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q3224404" value="Le Matin"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q1758322" value="Solex"/>
+</Article>

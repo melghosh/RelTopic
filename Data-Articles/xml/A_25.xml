@@ -1,0 +1,24 @@
+﻿<Article id="A_25" year="1923" issue="march" day="18" page="2">
+     <topics>
+        <topic uri=""/>
+   </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q3419492" value="Raphaël Milliès-Lacroix"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q377169" value="Victor Henri Bérenger"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3261658" value="Louis Dausset"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3085361" value="François Milan"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3271259" value="Léon Perrier"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q330586" value="Abraham Schrameck"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q48921101" value="Sébastien de Gasquet"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2403337" value="Justin de Selves"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3271082" value="Léon Jenouvrier"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3119745" value="Guillaume Chastenet de Castaing"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2833511" value="Alexandre Bérard"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q2960618" value="Charles de Lasteyrie"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q191974" value="Raymond Poincaré"/>
+    <NE type="location" uri="http://www.wikidata/entity/" value=""/>
+    <NE type="Organisation" uri="http://www.wikidata/entity/Q2986536" value="Commission des finances"/>
+    <NE type="Organisation" uri="http://www.wikidata/entity/Q637846" value="le Sénat"/>
+    <NE type="Organisation" uri="http://www.wikidata/entity/Q375928" value="la Chambre"/>
+</Article>
+

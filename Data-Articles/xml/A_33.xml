@@ -1,0 +1,17 @@
+﻿<Article id="A_33" year="1928" issue="may" day="9" page="2" url="https://gallica.bnf.fr/ark:/12148/bpt6k576153h/f2.item" title="La vaccinaion contre la tuberculose">
+  <topics>
+    <topic uri=""/>
+   </topics>
+  <NE type="organization" uri="http://www.wikidata/entity/Q337555" value="Académie de médecine"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q437983" value="professeur Calmette"/>  
+  <NE type="product" uri="http://www.wikidata/entity/Q798309" value="B.C.G"/>  
+  <NE type="divers" uri="http://www.wikidata/entity/Q12204" value="tuberculose"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q55672177" value="Henri Vignes"/>  
+  <NE type="person" uri="" value="Lignières"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q1486" value="Buenos-Aires"/>  
+  <NE type="person" uri="" value="Tzekhnovitzer"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q42308" value="Kharkov"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q46" value="Europe"/>  
+
+</Article>

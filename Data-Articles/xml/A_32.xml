@@ -1,0 +1,24 @@
+﻿<Article id="A_32" year="1928" issue="may" day="9" page="1" url="https://gallica.bnf.fr/ark:/12148/bpt6k576153h/f1.item" title="En avion pour l'Indo-Chine et Tokio">
+  <topics>
+    <topic uri=""/>
+   </topics>
+  <NE type="location" uri="http://www.wikidata/entity/Q1490" value="Tokio"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q43467" value="indo-chine"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q3103314" value="Pivolo"/>
+  <NE type="person" uri="http://www.wikidata/entity/" value="Gonin"/>
+  <NE type="person" uri="http://www.wikidata/entity/" value="Carol"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q738719" value="Bourget"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q48" value="Asie"/>
+  <NE type="person" uri="http://www.wikidata/entity/Q3103314" value="Pelletier Doisy"/>
+  <NE type="location" uri="http://www.wikidata/entity/Q19660" value="Bucarest"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q1530" value="Bagdad"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q8660" value="Karachi"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q1348" value="Calcutta"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q1858" value="Hanoi"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q8686" value="Changhai"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q5428" value="Sibérie"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q159" value="Russie"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q90" value="Paris"/>  
+  <NE type="location" uri="http://www.wikidata/entity/Q37995" value="Rangoon"/>
+  <NE type="person" uri="" value="Brunat"/>   
+</Article>

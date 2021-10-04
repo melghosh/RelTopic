@@ -1,0 +1,11 @@
+﻿<Article id="A_28" year="1925" issue="january" day="20" page="1">
+    <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q192894" value="Miguel Primo de Rivera"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q2807" value="Madrid"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q484552" value="Algésiras"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q185157" value="Tétouan"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q287076" value="ABC"/>
+</Article>

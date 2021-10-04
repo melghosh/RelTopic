@@ -1,0 +1,13 @@
+﻿<Article id="A_21" year="1923" issue="march" day="16" page="1">
+	<topics>
+      <topic uri="http://www.wikidata/entity/Q904708"/>
+      <topic uri=""/>
+    </topics>
+
+	<NE type="organization" uri="http://www.wikidata/entity/Q407448" value="Air Liquide"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q537061" value="Georges Claude"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q382573" value="André Michelin"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q715906" value="Paul Appell"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q209842" value="Université de Paris"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q52322152" value="Comité national de la recherche scientifique"/>
+</Article>

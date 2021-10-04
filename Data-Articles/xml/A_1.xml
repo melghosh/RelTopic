@@ -1,0 +1,15 @@
+﻿<Article id="A_1" year="1935" issue="march" day="14" page="1">
+	<topics>
+		<topic uri=""/>
+	</topics>
+		<NE type="person" uri="" value="Reich"/>
+
+	<NE type="person" uri="http://www.wikidata/entity/Q6257889" value="John Simon"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q352" value="Adolf Hitler"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q58211956" value="Foreign Office"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q47906" value="Hermann Göring"/>
+</Article>
+
+
+
+

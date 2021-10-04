@@ -1,0 +1,24 @@
+﻿<Article id="A_19" year="1923" issue="february" day="22" page="3" url="https://gallica.bnf.fr/ark:/12148/bpt6k5742504/f3.item" 
+title ="On tend a un accord politique et economique entre la France et l'Italie">
+	<topics>
+		<topic uri=""/>
+	</topics>
+
+	<NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>
+	<NE type="location" uri="http://www.wikidata/entity/Q38" value="Italie"/>
+	<NE type="location" uri="http://www.wikidata/entity/Q220" value="Rome"/>
+	<NE type="product" uri="" value="Corriere d'Italia"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3133192" value="Henry de Jouvenel "/>
+	<NE type="product" uri="http://www.wikidata/entity/Q3224404" value="Le Matin"/>
+
+	<NE type="divers" uri="http://www.wikidata/entity/Q917194" value="modus vivendi"/>
+		<NE type="product" uri="http://www.wikidata/entity/Q46220103" value="phosphate"/>
+		<NE type="product" uri="http://www.wikidata/entity/Q899094" value="superphosphate"/>
+
+
+
+</Article>
+
+
+
+

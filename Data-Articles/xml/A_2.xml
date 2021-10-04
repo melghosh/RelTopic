@@ -1,0 +1,26 @@
+﻿<Article id="A_2" year="1935" issue="march" day="12" page="5">
+	<topics>
+		<topic uri=""/>
+		<topic uri="http://www.wikidata/entity/Q1081491"/>
+	</topics>
+	<NE type="organization" uri="http://www.wikidata/entity/Q1386860" value="Angoulême CFC "/>
+	<NE type="organization" uri="" value="Tigres vendéens"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q244750" value="French Football Federation"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q208228" value="Stade de Reims"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q699286" value="Arras Football"/>
+		<NE type="person" uri="" value="Got"/>
+		<NE type="person" uri="" value="Amalric"/>
+		<NE type="person" uri="" value="Pons"/>
+		<NE type="person" uri="" value="Coldeboeuf"/>
+		<NE type="person" uri="" value="Denis"/>
+		<NE type="person" uri="" value="Richou"/>
+		<NE type="person" uri="" value="Villo"/>
+		<NE type="person" uri="" value="Boussiron"/>
+
+	<NE type="person" uri="http://www.wikidata/entity/Q23884186" value="Ferland Mendy"/>
+	<NE type="person" uri="http://www.wikidata/entity/Q3371193" value="Paul Faure"/>
+</Article>
+
+
+
+

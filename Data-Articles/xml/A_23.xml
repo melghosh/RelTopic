@@ -1,0 +1,22 @@
+<Article id="A_23" year="1923" issue="march" day="16" page="3">
+    <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q271878" value="George Curzon"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q18197798" value="Charles de Beaupoil, comte de Saint Aulaire"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q166663" value="Bonar Law"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q3300459" value="Maurice Bompard "/>
+    <NE type="person" uri="http://www.wikidata/entity/Q1054146" value="Pietro Tomasi della Torretta"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q22569906" value="Bartolomeo Nogara"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q183" value="Allemagne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q84" value="Londres"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q151993" value="Ruhr"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q31" value="Belgique"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q48214" value="Proche-Orient"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q38" value="Italie"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q58211956" value="Foreign Office"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q6063" value="gouvernement britannique"/>
+    <NE type="divers" uri="http://www.wikidata/entity/Q193258" value="Traite de Lausanne"/>
+</Article>

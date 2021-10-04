@@ -1,0 +1,20 @@
+﻿<Article id="A_22" year="1923" issue="march" day="16" page="1">
+    <topics>
+        <topic uri=""/>
+    </topics>
+
+    <NE type="person" uri="http://www.wikidata/entity/Q542627" value="Aleksander Skrzyński"/>
+    <NE type="person" uri="http://www.wikidata/entity/Q313623" value="Gueorgui Tchitcherine"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q183" value="Allemagne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q142" value="France"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q37" value="Lituanie"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q36" value="Pologne"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q64" value="Berlin"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q649" value="Moscou"/>
+    <NE type="location" uri="http://www.wikidata/entity/Q900636" value="Europe centrale et orientale"/>
+    <NE type="location" uri="" value="Russie"/>
+    <NE type="organization" uri="http://www.wikidata/entity/Q2520566" value="Gouvernement de Varsovie"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q1137842" value="gouvernement de Moscou"/>
+	<NE type="organization" uri="http://www.wikidata/entity/Q2742769" value="conférence des ambassadeurs"/>
+    <NE type="divers" uri="http://www.wikidata/entity/Q8736" value="traité de Versailles"/>
+</Article>
