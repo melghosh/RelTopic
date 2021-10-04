@@ -20,19 +20,19 @@ The main data sources are the named entities collected from the press articles a
 #### Source Code
 The source code is composed of seven main files:
 
-* AssignInstances: assign the named entities as instances of Wikidata classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
+* **AssignInstances**: assign the named entities as instances of Wikidata classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
 
-* OntologyConstruction: define a set of SPARQL queries to build topic ontologies. The building process is composed of three main phases: 1) construct the hierarchical structure; 2) construct the non-hierarchical structure; 3) enrich the hierarchy of the ontology.
+* **OntologyConstruction**: define a set of SPARQL queries to build topic ontologies. The building process is composed of three main phases: 1) construct the hierarchical structure; 2) construct the non-hierarchical structure; 3) enrich the hierarchy of the ontology.
 
-* OntologyConstructionApplication: apply the ontology development in the context of old press articles specifically the old french newspaper `Le Matin`. The inputs are the `CSV` files and the output is an OWL ontology (e.g., Topic-OPA.owl) located in `/ontology/`.
+* **OntologyConstructionApplication**: apply the ontology development in the context of old press articles specifically the old french newspaper `Le Matin`. The inputs are the `CSV` files and the output is an OWL ontology (e.g., Topic-OPA.owl) located in `/ontology/`.
 
-* TopicOntology: implement the topic ontology and add the instances. 
+* **TopicOntology**: implement the topic ontology and add the instances. 
 
-* OntologyDirectedGraph: transform the topic ontology into a directed weighted graph. The semantic relatedness measure RelTopic is defined based on this graph.
+* **OntologyDirectedGraph**: transform the topic ontology into a directed weighted graph. The semantic relatedness measure RelTopic is defined based on ontology graph.
 
-* TopicLabeling: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
+* **TopicLabeling**: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
 
-* Main: excute the complete process (i.e., assignment of instances, ontology construction, and topic labeling). To test our approach and verify the obtained results, execute `TopicLabeling`.
+* **Main**: excute the complete process (i.e., assignment of instances, ontology construction, and topic labeling). To test our approach and verify the obtained results, execute `TopicLabeling`.
 
 
 #### Labeling Results
@@ -41,16 +41,16 @@ The labeling results are `CSV` files located in `/labeling-results/csv/`.
 
 ### IMPORTANT NOTE
 -------------------------------------------------------
-In this study, Topic-OPA is harvested from Wikidata in July `2020`.
+In this study, the latest version of Topic-OPA is harvested from Wikidata in July `2020`. Applying the ontology construction process currently, or in the future, will produce a slightly different Topic-OPA since *Wikidata* is continually growing. We show below examples of differences in metrics and hierarchies between Topic-OPA 2020 and 2021. These changes will affect different RelTopic computations related to Topic-OPA such as *average depth*, *average of relatedness values*, *threshold*, etc. Therefore, the labeling results will be affected. To overcome this limitation, it is advised to curate Topic-OPA under the supervision of domain experts and admit a pertinent version of the ontology.
 
 ![image](https://user-images.githubusercontent.com/91874965/135828466-ee90db5a-1df6-4a6a-ba65-e3e4cdcef08b.png)
 
-![image](https://user-images.githubusercontent.com/91874965/135828416-25cedc2e-83e9-4fa4-a67b-3252476a85b7.png)
+![image](https://user-images.githubusercontent.com/91874965/135831768-a222a93d-9b4d-4f65-b51a-a53ab3a7bd60.png)
 
 
-### TODO
+### TO-DO
 -------------------------------------------------------
-* Code: to improve the implementation and the approach and enhance the code.
+* **Code**: to improve the implementation and the approach and enhance the code.
 
-* Ontology: to curate the topic ontology, apply the labeling process on the curated version, and assess the pertinence of the labeling results.
+* **Ontology**: to curate the topic ontology, apply the labeling process on the curated version, and assess the pertinence of the labeling results.
  
