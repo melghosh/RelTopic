@@ -7,12 +7,9 @@
 #
 
 import rdflib
-from rdflib import URIRef
-from rdflib.namespace import OWL, RDF
 import OntologyConstruction
 import pandas as pd
 import time
-
 
 
 class OntologyConstructionApplication:
