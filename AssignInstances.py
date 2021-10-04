@@ -8,9 +8,7 @@
 
 import csv
 import xml.etree.ElementTree as ET
-
 from SPARQLWrapper import SPARQLWrapper, JSON
-
 import pandas as pd
 
 class AssignInstances:
