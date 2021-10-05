@@ -8,6 +8,7 @@
 #
 #
 #
+#
 
 
 import csv
@@ -21,6 +22,7 @@ class AssignInstances:
             and disambiguated using Wikidata uris.
   2- output: a csv file that contains the named entities (instances) and their hypernyms classes based on Wikidata.
              these classes are considered "most specific classes" and will be used later to build the ontology.
+    NOTE: these classes may change throughout the time since Wikidata is continually growing.
   """
 
 
