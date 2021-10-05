@@ -19,7 +19,7 @@ class Main():
     #named entities of old press are represented in XML files
     # named entities of recent press  are represented in CSV files.
 
-    #to execute the process on old press articles uncomment the following
+    #to execute the assignment process on old press articles
     i=AssignInstances.AssignInstances()
     sourcelist='Data-Articles/xml/articles.csv'
     source='Data-Articles/xml/'
