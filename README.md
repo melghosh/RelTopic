@@ -22,7 +22,7 @@ The main data sources are the named entities collected from the press articles a
 #### Source Code
 The source code is composed of the following files:
 
-* **AssignInstances**: assign the named entities as instances of Wikidata classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
+* **AssignInstances**: assign the named entities as instances of *Wikidata* classes. The inputs are the `XML` files and the outputs are `CSV` files located in `/Data-Articles/csv`.
 
 * **OntologyConstruction**: define a set of SPARQL queries to build topic ontologies. The building process is composed of three main phases: 1) construct the hierarchical structure; 2) construct the non-hierarchical structure; 3) enrich the hierarchy of the ontology.
 
@@ -54,5 +54,5 @@ In this study, the latest version of Topic-OPA is harvested from Wikidata in Jul
 -------------------------------------------------------
 * **Code**: to improve the topic labeling algorithm and enhance the code.
 
-* **Ontology**: to curate the topic ontology, apply the labeling process on the curated version, and assess the pertinence of the labeling results.
+* **Ontology**: to curate the topic ontology Topic-OPA, apply the labeling process on the curated version, and assess the pertinence of the labeling results .
  
