@@ -5,6 +5,7 @@
 #   Status: Beta version.
 #   ---------------------------------------------------
 #
+import AssignInstances
 import OntologyConstructionApplication
 
 class Main():
@@ -12,6 +13,19 @@ class Main():
     1- assign the named entities as instances;
     2- create Topic-OPA or Topic-RPA ontology based on the assigned named entities;
       """
+
+    #Step1- to assign named entities as instances
+    #this step is under improvement to cover different types of entry files (e.g., XML, CSV) -
+    #named entities of old press are represented in XML files
+    # named entities of recent press  are represented in CSV files.
+
+    #to execute the process on old press articles uncomment the following
+    i=AssignInstances.AssignInstances()
+    sourcelist='Data-Articles/xml/articles.csv'
+    source='Data-Articles/xml/'
+    output='Data-Articles/csv/'
+    i.assign_instances(sourcelist, source,output)
+
 
     #Step2- to develop the topic ontology
     type_press_list = ['', 'recent-press/']

@@ -16,8 +16,8 @@ import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
 import pandas as pd
 
-class AssignInstances:
-  """This class implements the assignment of the named entities, collected from the articles, as instances.
+class AssignInstances(object):
+ """This class implements the assignment of the named entities, collected from the articles, as instances.
   1- input: an xml file, representing each article, that contains the named entities collected from the article
             and disambiguated using Wikidata uris.
   2- output: a csv file that contains the named entities (instances) and their hypernyms classes based on Wikidata.
@@ -25,21 +25,23 @@ class AssignInstances:
     NOTE: these classes may change throughout the time since Wikidata is continually growing.
   """
 
+ def __init__(self):
+     pass
 
-  g1 = 'Data-Articles/xml/articles.csv'
+ def assign_instances(self, sourcelist, source, output):
+
+  g1 = sourcelist
   colname = ['article']
   data = pd.read_csv(g1, names=colname)
   articles = data.article.tolist()
   articles.pop(0)
   for a in articles:
 
-    root = ET.parse('Data-Articles/xml/'+a+'.xml').getroot()
+    root = ET.parse(source+a+'.xml').getroot()
     results=[]
-    #print(root.get('year'))
     for ne in root.findall('NE'):
         if((ne.get('type')=='person' or ne.get('type')=='organization' or ne.get('type')=='product' or ne.get('type')=='divers')and ne.get('uri')!=""):
           uri=ne.get('uri')
-          #print(uri)
           lengthuri = len(uri)
           prefixlength = 27
           entityid = uri[27:lengthuri]
@@ -101,7 +103,7 @@ class AssignInstances:
                   results.append((entityid,valuesp))
 
 
-    with open('Data-Articles/csv/'+a+'.csv', mode='w',newline='') as csv_file:
+    with open(output+a+'.csv', mode='w',newline='') as csv_file:
      fieldnames = ['instance', 'topic']
      writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
