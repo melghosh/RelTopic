@@ -8,8 +8,8 @@
 import AssignInstances
 import OntologyConstructionApplication
 
-class Main():
-    """This class executes the ontology construction process by applying the following steps:
+def main():
+    """This function executes the ontology construction process by applying the following steps:
     1- assign the named entities as instances;
     2- create Topic-OPA or Topic-RPA ontology based on the assigned named entities;
       """
@@ -39,4 +39,5 @@ class Main():
     #uncomment to develop ontology for recent press
     #a.develop_ontology(ontology_recent_press,type_press_list[1])
 
-
+if __name__ == "__main__":
+    main()
