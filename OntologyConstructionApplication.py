@@ -1,8 +1,12 @@
-#  Copyright (c) 2021. Mirna El Ghosh (ASTURIAS Project) version 1.0
-#   ------------------------------------
-#   Status: This code is a beta version.
-#   ------------------------------------
-#   >>>>>>> The software is under improvement <<<<<<<.
+#  Copyright (c) 2021. The ASTURIAS Project.
+#   ---------------------------------------------------
+#   Version: 1.0.1
+#   Contributor: Mirna El Ghosh.
+#   Status: Beta version.
+#   ---------------------------------------------------
+#
+#
+#
 #
 #
 
