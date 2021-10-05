@@ -9,6 +9,7 @@
 #
 #
 #
+#
 
 import csv
 from collections import Counter
@@ -24,13 +25,14 @@ class TopicLabeling(object):
 
  """This class implements the topic pabeling process of articles.
     input: list of articles (csv).
-    output: list of topics associated for each article.
+    output: list of topics associated for each article (csv).
   """
 
  def __init__(self):
    pass
+
  def labeling_process(self, ontology, type):
-     # problem in A_23 (instance:Q6063)
+     # problem in A_36
      g1 = 'Data-Articles/'+type+'csv/articles.csv'
      colname = ['article']
      data = pd.read_csv(g1, names=colname)
