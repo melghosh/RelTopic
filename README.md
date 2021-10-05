@@ -17,7 +17,7 @@ This research work is addressed in the following papers:
 ### The code is beta version (Python 3.8 is required) - The project is under improvement
 ------------------------------------------------------------------------------------------
 #### Data Sources
-The main data sources are the named entities collected from the press articles and encoded in `XML` files. These files are located in `/Data-Articles/xml/`.
+The main data sources are the named entities collected from old press articles and encoded in `XML` files. These files are located in `/Data-Articles/xml/`. For recent press, the named entities are represented (particularly) in `CSV` files located in `/Data-Articles/recent-press/xml/`.
 
 #### Source Code
 The source code is composed of the following files:
