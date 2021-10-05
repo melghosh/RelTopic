@@ -2,7 +2,7 @@
 
 # RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies 
 
-We present RelTopic, a novel graph-based semantic relatedness measure in topic ontologies for topic labeling purposes. RelTopic aims to assess the semantic relatedness between instances and concepts in topics ontologies by computing weights of nodes and edges, degree centrality of nodes, and shortest paths. RelTopic is applied in the context of `Cultural Heritage`, specifically old press articles. To apply RelTopic, a topic ontology named Topic-OPA is developed from the articles to label represented by a set of named entities that are disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
+We present RelTopic, a novel graph-based semantic relatedness measure in topic ontologies for topic labeling purposes. RelTopic aims to assess the semantic relatedness between instances and concepts in topics ontologies by computing weights of nodes and edges, degree centrality of nodes, and shortest paths. RelTopic is applied in the context of `Cultural Heritage`, specifically old press articles. To apply RelTopic, a topic ontology named Topic-OPA is developed from the articles represented by a set of named entities that are disambiguated using Wikidata URIs. RelTopic is also tested in recent newspaper articles.
 
 **This study is part of the European project `ASTURIAS` (Structural Analysis and Semantic Indexing of Newspaper Articles)**
 
@@ -33,6 +33,8 @@ The source code is composed of the following files:
 * **OntologyDirectedGraph**: transform the topic ontology into a directed weighted graph. The semantic relatedness measure RelTopic is defined based on ontology graph.
 
 * **TopicLabeling**: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
+
+* **Main**: execute the complete process (i.,e. assignment of instances, ontology construction, and topic labeling). Besides, it is possible to execute the labeling process of `Le Matin` articles and check the published results.
 
 
 #### Labeling Results
