@@ -34,7 +34,9 @@ The source code is composed of the following files:
 
 * **TopicLabeling**: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
 
-* **Main**: execute the complete process (i.,e. assignment of instances, ontology construction, and topic labeling). Besides, it is possible to execute the labeling process of `Le Matin` articles and check the published results.
+* **Main1**: execute the ontology construction process (i.,e. assignment of instances, application of ontology construction). 
+
+* **Main2**: execute the topic labeling process. To verify the labeling process of `Le Matin` articles and check the published results.
 
 
 #### Labeling Results
