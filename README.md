@@ -37,7 +37,7 @@ The source code is composed of the following files:
 
 * **Main1**: execute the ontology construction process (i.,e. assignment of instances, application of ontology construction). By executing **Main1**, the existent data (ontology+assigned instances) will be replaced.
 
-* **Main2**: execute the topic labeling process. To check and verify the labeling results of `Le Matin` and recent press articles, execute **Main2** to consider the previously developed ontologies located in `/ontology/`. Please see **IMPORTANT NOTE** below.
+* **Main2**: execute the topic labeling process. To check and verify the published labeling results of `Le Matin` and recent press articles, execute **Main2** by considering the previously developed ontologies located in `/ontology/`. Please see **IMPORTANT NOTE** below.
 
 
 #### Labeling Results
