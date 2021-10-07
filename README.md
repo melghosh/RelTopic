@@ -51,6 +51,11 @@ In this study, the latest version of Topic-OPA is harvested from Wikidata in Jul
 
 ![image](https://user-images.githubusercontent.com/91874965/135831768-a222a93d-9b4d-4f65-b51a-a53ab3a7bd60.png)
 
+>>> Recently (October 6 and 7, 2021), we found some errors in Wikidata (thereby in Topic-OPA) such as cyclic subClassOf relations (below we show an example of a class that is subClassOf itself!). Such errors, which a human intervention may cause since *Wikidata* is **human editable**, will prevent the execution of the labeling process. The intervention of the domain experts remains essential to correct and remove these errors from the developed topic ontology.
+
+![image](https://user-images.githubusercontent.com/91874965/136364832-6928dcc2-7674-44a3-9f4d-77c0a07eb0f3.png)
+
+
 -------------------------------------------------------
 ### TO-DO
 -------------------------------------------------------
