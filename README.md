@@ -1,4 +1,3 @@
-https://zenodo.org/badge/latestdoi/413334598
 
 ![image](https://user-images.githubusercontent.com/91874965/135903361-4895d311-46a8-42e7-8316-516e04137bcc.png)
 
