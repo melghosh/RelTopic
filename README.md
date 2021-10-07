@@ -1,3 +1,5 @@
+https://zenodo.org/badge/latestdoi/413334598
+
 ![image](https://user-images.githubusercontent.com/91874965/135903361-4895d311-46a8-42e7-8316-516e04137bcc.png)
 
 # RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies 
@@ -34,9 +36,9 @@ The source code is composed of the following files:
 
 * **TopicLabeling**: define the topic labeling process using RelTopic and Topic-OPA. The output is the topic labeling results located in `/labeling-results/csv/`.
 
-* **Main1**: execute the ontology construction process (i.,e. assignment of instances, application of ontology construction). 
+* **Main1**: execute the ontology construction process (i.,e. assignment of instances, application of ontology construction). By executing **Main1**, the existent data (ontology+assigned instances) will be replaced.
 
-* **Main2**: execute the topic labeling process. To check and verify the labeling results of `Le Matin` and recent press articles, consider the previously developed ontologies located in `/ontology/`. Please see **IMPORTANT NOTE** below.
+* **Main2**: execute the topic labeling process. To check and verify the labeling results of `Le Matin` and recent press articles, execute **Main2** to consider the previously developed ontologies located in `/ontology/`. Please see **IMPORTANT NOTE** below.
 
 
 #### Labeling Results
