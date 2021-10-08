@@ -1,17 +1,17 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
-sparqlwrapper = "*"
-rdflib = "*"
+owlready2 = "==0.22"
+rdflib = "==4.2.2"
+sparqlwrapper = "==1.8.5"
+networkx = "==2.4"
 numpy = "*"
 pandas = "*"
-owlready2 = "*"
-networkx = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
