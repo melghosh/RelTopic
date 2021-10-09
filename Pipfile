@@ -4,14 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-owlready2 = "==0.22"
-rdflib = "==4.2.2"
-sparqlwrapper = "==1.8.5"
-networkx = "==2.4"
+sparqlwrapper = "*"
+rdflib = "*"
 numpy = "*"
 pandas = "*"
+owlready2 = "==0.22"
+networkx = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
