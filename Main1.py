@@ -11,7 +11,7 @@
 import AssignInstances
 import OntologyConstructionApplication
 
-if __name__ == "__main__":
+def ontology_building():
     # the ontology construction process:
     # Step1- assign the named entities of old press articles
     i = AssignInstances.AssignInstances()
@@ -23,3 +23,6 @@ if __name__ == "__main__":
     # Step2- develop the topic ontology
     a = OntologyConstructionApplication.OntologyConstructionApplication()
     a.develop_ontology('ontology/Topic-OPA-2021', '')
+
+if __name__ == "__main__":
+    ontology_building()
