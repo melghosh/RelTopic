@@ -1,28 +1,18 @@
 #  Copyright (c) 2021. The ASTURIAS Project.
-#   ---------------------------------------------------
+#   -----------------------------------------------------------------------
 #   Version: 1.0.1
 #   Contributor: Mirna El Ghosh.
 #   Status: Beta version.
-#   ---------------------------------------------------
+#   -----------------------------------------------------------------------
+#
+#
+#
 #
 
 import TopicLabeling
 
-def main():
-    """This function executes the topic labeling process
-      """
-    type_press_list = ['', 'recent-press/']
-    ontology_old_press = 'ontology/Topic-OPA.owl'
-    ontology_recent_press = 'ontology/Topic-RPA.owl'
-
-    t = TopicLabeling.TopicLabeling()
-
-    #uncomment to apply the labeling of recent press articles
-    #t.labeling_process(ontology_recent_press, type_press_list[1])
-
-    #labeling old press articles
-    #type_press_list[0] is for the old press
-    t.labeling_process(ontology_old_press, type_press_list[0])
-
 if __name__ == "__main__":
-    main()
+    #apply topic labeling
+    t = TopicLabeling.TopicLabeling()
+    t.labeling_process('ontology/Topic-OPA.owl', '')
+    #t.labeling_process('ontology/Topic-RPA.owl', 'recent-press/')
