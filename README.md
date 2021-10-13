@@ -1,5 +1,5 @@
 
-![image](https://user-images.githubusercontent.com/91874965/135903361-4895d311-46a8-42e7-8316-516e04137bcc.png)
+![image](https://user-images.githubusercontent.com/91874965/137097883-86402806-3fa4-4f91-ac29-efab2eb29962.png)
 
 # RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies 
 
