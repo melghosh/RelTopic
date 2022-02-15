@@ -12,7 +12,7 @@ This research work is addressed in the following papers:
 
 1- El Ghosh, M., Zanni-Merk, C., Delestre, N., Kotowicz, J.P., Abdulrab, H.: Topic-OPA: A Topic Ontology for Modeling Topics of Old Press Articles. In proceedings of the 12th International conference on Knowledge Engineering and Ontology Development (KEOD 2020). pp. 275-282, November 2020
 
-2- El Ghosh, M., Delestre, N., Zanni-Merk, C., Kotowicz, J.P., Abdulrab, H.: RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies and its Applicability for Topic Labeling of Old Press Articles. Submitted to [Semantic Web Journal](http://www.semantic-web-journal.net/content/reltopic-graph-based-semantic-relatedness-measure-topic-ontologies-and-its-applicability-1).
+2- El Ghosh, M., Delestre, N., Zanni-Merk, C., Kotowicz, J.P., Abdulrab, H.: RelTopic: A Graph-Based Semantic Relatedness Measure in Topic Ontologies and its Applicability for Topic Labeling of Old Press Articles, [Semantic Web Journal](http://www.semantic-web-journal.net/content/reltopic-graph-based-semantic-relatedness-measure-topic-ontologies-and-its-applicability-1).
 
 ------------------------------------------------------------------------------------------
 ### The code is beta version (Python 3.8 is required) - The project is under improvement
