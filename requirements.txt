@@ -1,0 +1,11 @@
+Requirements are defined in Pipfile.
+
+python_version = "3.8"
+
+[packages]
+sparqlwrapper = "*"
+rdflib = "*"
+numpy = "*"
+pandas = "*"
+owlready2 = "0.22"
+networkx = "*"
